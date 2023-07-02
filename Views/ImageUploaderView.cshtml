@@ -1,0 +1,83 @@
+﻿<html>
+
+    <head>
+        <Title> Image Uploader </Title>
+        <meta name=""viewport"" content=""width=device-width, initial-scale=1"">
+        <link rel=""stylesheet"" href=""https://www.w3schools.com/w3css/4/w3.css"">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <style>
+            body {
+                display: flex;
+            }
+
+            form {
+                margin: auto;
+            }
+
+            h1 {
+                margin: 300px auto;
+                text-align: center;
+                color: green;
+                font-size: 8em;
+                transition: 0.5s;
+                font-family: Arial, Helvetica, sans-serif;
+                text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc, 0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc, 0 10px 0 #ccc, 0 11px 0 #ccc, 0 12px 0 #ccc, 0 20px 30px rgba(0, 0, 0, 0.5);
+            }
+            space {
+                padding-bottom:50px;
+            }
+
+
+            div.settings {
+                display: grid;
+                grid-template-columns: max-content max-content;
+                grid-gap: 5px;
+            }
+
+            div.settings label {
+                text-align: right;
+            }
+
+            .center 
+
+            {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+                text-align: center;
+            }
+
+        
+
+
+
+        </style>
+
+    </head>
+   
+    <body>
+    <form method="post" enctype="multipart/form-data" >
+        <img src="https://tse4.mm.bing.net/th?id=OIP.n3K3Nkb101bhej3DUoamsQHaHh&pid=Api&P=0&h=180" class=" center" alt="upload image">
+        <div class=" space settings">
+            
+            <h1  class="h1"> Image Uploader </h1>
+            
+        </div>
+        <br>
+        <div class=" space settings">
+            <label for="title">Title of image:</label>
+            <input type="text" id="title" name="Title" required>
+        </div>
+        <br>
+        <div class=" space settings">
+            <label for="image">Image:</label>
+            <input type="file" id="image" name="ImageFile" accept=".jpeg,.png,.gif" required>
+        </div>
+        <br>
+        <div class=" space ">
+            <button type="submit" class="btn btn-primary btn-block">Upload</button>
+        </div>
+    </form>
+</body>
+</html>
